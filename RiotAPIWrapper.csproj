@@ -47,6 +47,8 @@
     <Compile Include="API\LEAGUE-V4.cs" />
     <Compile Include="API\SUMMONER-V4.cs" />
     <Compile Include="DTO\LeagueEntryDTO.cs" />
+    <Compile Include="DTO\LeagueItemDTO.cs" />
+    <Compile Include="DTO\LeagueListDTO.cs" />
     <Compile Include="DTO\MiniSeriesDTO.cs" />
     <Compile Include="DTO\SummonerDTO.cs" />
     <Compile Include="Enums\Division.cs" />

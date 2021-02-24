@@ -55,9 +55,13 @@ namespace RiotAPIWrapper
             {
                 return JsonConvert.DeserializeObject<SummonerDTO>(content);
             }
-            if (type == typeof(LeagueEntryDTO))
+            if (type == typeof(List<LeagueEntryDTO>))
             {
                 return JsonConvert.DeserializeObject<List<LeagueEntryDTO>>(content);
+            }
+            if (type == typeof(LeagueListDTO))
+            {
+                return JsonConvert.DeserializeObject<LeagueListDTO>(content);
             }
             return null;
         }
@@ -141,6 +145,7 @@ namespace RiotAPIWrapper
         {
             if (this.Param)
             {
+                this.Param = false;
                 return this.URL + "&api_key=" + this.Key;
             }
             else

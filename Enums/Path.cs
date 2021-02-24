@@ -7,7 +7,7 @@ namespace RiotAPIWrapper.Enums
     /// </summary>
     public enum SummonerPath
     {
-        // SUMMONER //
+        // SUMMONER-V4 //
         [Description("summoner/v4/summoners/by-account/")]
         AccountID,
         [Description("summoner/v4/summoners/by-name/")]
@@ -20,10 +20,18 @@ namespace RiotAPIWrapper.Enums
 
     public enum LeaguePath
     {
-        // LEAGUE //
+        // LEAGUE-V4 //
         [Description("league/v4/entries/by-summoner/")]
         SummonerID,
         [Description("league/v4/entries/{queue}/{tier}/{division}")]
-        QueueTierDivision
+        QueueTierDivision,
+        [Description("league/v4/challengerleagues/by-queue/")]
+        EntrieChallenger,
+        [Description("league/v4/grandmasterleagues/by-queue/")]
+        EntrieGrandmaster,
+        [Description("league/v4/leagues/")]
+        LeagueID,
+        [Description("league/v4/masterleagues/by-queue/")]
+        EntrieMaster
     }
 }
