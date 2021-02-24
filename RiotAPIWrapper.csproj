@@ -44,13 +44,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="API\LEAGUE-V4.cs" />
     <Compile Include="API\SUMMONER-V4.cs" />
+    <Compile Include="DTO\LeagueEntryDTO.cs" />
+    <Compile Include="DTO\MiniSeriesDTO.cs" />
     <Compile Include="DTO\SummonerDTO.cs" />
+    <Compile Include="Enums\Division.cs" />
     <Compile Include="Enums\Extensions\EnumDescription.cs" />
     <Compile Include="Enums\Game.cs" />
     <Compile Include="Enums\Path.cs" />
+    <Compile Include="Enums\Queue.cs" />
     <Compile Include="Enums\Region.cs" />
     <Compile Include="API\BaseAPI.cs" />
+    <Compile Include="Enums\Tier.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

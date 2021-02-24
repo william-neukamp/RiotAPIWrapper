@@ -3,9 +3,9 @@
 namespace RiotAPIWrapper.Enums
 {
     /// <summary>
-    /// Paths to access Riot API
+    /// Paths to access Riot APIs
     /// </summary>
-    public enum Path
+    public enum SummonerPath
     {
         // SUMMONER //
         [Description("summoner/v4/summoners/by-account/")]
@@ -16,5 +16,14 @@ namespace RiotAPIWrapper.Enums
         PUUID,
         [Description("summoner/v4/summoners/")]
         SummonerID
+    }
+
+    public enum LeaguePath
+    {
+        // LEAGUE //
+        [Description("league/v4/entries/by-summoner/")]
+        SummonerID,
+        [Description("league/v4/entries/{queue}/{tier}/{division}")]
+        QueueTierDivision
     }
 }

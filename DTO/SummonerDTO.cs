@@ -1,4 +1,4 @@
-﻿namespace RiotAPIWrapper.API
+﻿namespace RiotAPIWrapper.DTO
 {
     /// <summary>
     /// SummonerDTO for Summoner json deserialize
